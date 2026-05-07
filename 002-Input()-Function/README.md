@@ -28,7 +28,7 @@ Without input() , programs would always produce the same output everytime they r
 input("prompt")
 ```
 
-### oraimo Watch Nova 2N 1.93'' AMOLED 33-Day Standby Smart Watch
+### Syntax of the input() Function
 
 | Part | Meaning |
 | ---- | ------- |
