@@ -507,6 +507,18 @@ case_:
 Check if a user is eligible to vote.
 
 ---
+📍 Solution
+
+```python
+age = 20
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+```
+
+---
 
 * Exercise 2
 
@@ -517,6 +529,21 @@ Negative
 Zero
 
 Using if-elif-else.
+
+---
+
+📍 Solution
+
+```python
+number = 15
+
+if number > 0:
+    print("Positive")
+elif number < 0:
+    print("Negative")
+else:
+    print("Zero")
+```
 
 ---
 
@@ -531,6 +558,21 @@ Use the and operator.
 
 ---
 
+📍 Solution
+
+```python
+
+Age = 20
+valid_id = True
+
+if age >= 18:
+    print("Access granted")
+else:
+   print("Access denied")
+```
+
+---
+
 * Exercise 4
 
 Convert the following into a ternary expression:
@@ -541,6 +583,16 @@ if score >= 50:
 else:
     result = "Fail"
 ```
+---
+
+```python
+score = 75
+
+result = "pass" if score >= 50 else "Fail"
+
+print(result)
+```
+
 
 ---
 
@@ -556,3 +608,22 @@ grade = "A"
 * B → Good
 * C → Average
 * Any other value → Invalid Grade
+
+---
+
+📍 Solution
+
+```python
+grade = A
+
+match grade:
+    case "Excellent":
+        print("A")
+     case "Good":
+         print("B")
+      case "Average":
+          print("C")
+       case_:
+           print("Invalid Grade")
+```
+      
