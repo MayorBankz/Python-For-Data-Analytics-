@@ -296,7 +296,321 @@ for product in products:
 Product found!
 ```
 
+---
 
+### **Pass Statement**
+`pass` does nothing.
+It acts as a placeholder for code you plan to write later.
+
+### **Example**
+```python
+for number in range(5):
+    if number == 2:
+        pass
+    print(number)
+```
+
+---
+
+### **Output**
+```python
+0
+1
+2
+3
+4
+```
+
+Nothing special happens because `pass` simply tells Python:
+"Do nothing here."
+
+---
+
+### **Real Life Example**
+Planning future features.
+```python
+if True:
+    pass
+```
+You can return later to add the actual code.
+
+---
+
+### **🎯 Else in Loops**
+
+An `else` block runs when the loop finishes normally.
+If the loop stops because of `break`, the `else` block does not execute.
+
+---
+
+### **Exaample Without Break**
+```python
+for number in range(3):
+    print(number)
+else:
+  `  print("Loop completed")
+```
+
+### **Output**
+```python
+0
+1
+2
+Loop completed
+```
+
+---
+
+### **Example With Break**
+```python
+for number in range(5):
+    if number == 2:
+        break
+    print(number)
+else:
+    print("Loop completed")
+```
+
+---
+
+### **Output**
+```python
+0
+1
+```
+
+The `else` block did not run because the loop ended with `break`.
+
+---
+
+### **Real Life Example**
+Searching for a username.
+
+```python
+users = ['John', 'Mary', 'James']
+search = "David"
+
+for user in users:
+    if user == search:
+        print("user found")
+        break
+else:
+    print(""User not found)
+```
+
+---
+
+### **🔁 Nested Loops**
+A nested loop is a loop inside another loop.
+
+---
+
+### **Syntax**
+```python
+for item1 in sequence:
+    for item2 in sequence:
+        #code
+```
+
+---
+
+### **Example**
+```python
+for row in range(3):
+    for column in range(2):
+        print(row, column)
+```
+---
+
+### **Output**
+
+```python
+0 0
+0 1
+1 0
+1 1
+2 0
+2 1
+```
+
+---
+
+### **Real Life Applications**
+Seating Arrangement
+Rows and seat:
+```python
+for row in range(1, 4):
+    for sear in range(1, 4):
+        print("Row", row, "seat", seat)
+```
+
+---
+
+### **Printing Patterns**
+```python
+for i in range(4):
+    for j in range(i + 1):
+        print("*", end = "")
+    print()
+```
+
+---
+
+### **Output**
+```python
+*
+**
+***
+****
+```
+
+---
+
+### **🔁 While Loops**
+A while loop repeats as long as a condition is True.
+
+---
+
+### **Syntax**
+```python
+while condition:
+    # code
+```
+
+---
+
+### **Example**
+```
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+```
+
+---
+
+### **Output**
+```python
+1
+2
+3
+4
+5
+```
+
+---
+
+### **How it works**
+Python checks:
+```python
+count <= 5
+```
+
+If it is `True`, the loops run.
+Eventually:
+```python
+count = 6
+```
+
+The condition becomes false, and the loop stops
+
+---
+
+### **🌐 Real Life Applications of While Loops**
+ATM PIN Validation
+```python
+pin = ""
+while pin != "1234":
+    pin = input("Enter PIN: ")
+
+print("Access Granted")
+```
+
+The user keeps trying until the correct pin is entered.
+
+---
+
+### **Download Progress**
+```python
+progress = 0
+while progress < 100:
+    print(progress, "%")
+    progress += 20
+```
+
+---
+
+### **While True **
+While True creates an infinite loop.
+it runs forever until a break statement stops it.
+
+### **Example**
+```python
+while True:
+    name = input("Enter your name: ")
+    if name == "quit":
+        break
+print("Hello", name)
+```
+
+---
+
+### **Example Seesion**
+Enter your name: Mayowa
+Hello Mayowa
+
+Enter your name: John
+Hello John
+
+Enter your name: quit
+
+The loop stops when the user types:
+quit
+
+---
+
+### Real Life Applications
+Game Menus
+```python
+while True:
+    print("1. start")
+    print("2. Exit")
+
+    choice = input("Choose: ")
+
+if choice == "2";
+    break
+```
+
+---
+
+### **Chat Applications**
+Applications continuosly wait for user input until the user exists.
+
+---
+
+### **Choosing the right loop**
+
+| Loop type | Best used when |
+| --------- | -------------- |
+| for loop | you know how many items you want to iterate through |
+| while loop | You don't know how many times the loop should run |
+| while True | The program should keep running until explicitly stopped |
+| Nested loops | Working with combinations, tables, grids, or patterns |
+
+---
+
+### **Summary**
+* `Loops` help to automate repetitive tasks
+* `for loops` iterate through sequences
+* `continue` skips the current iteration
+* `break` stops the loop immediately
+* `pass` is a placeholder that does nothing
+* `else` runs if the loop finishes without break
+* `Nested` loops are loops inside loops
+* `while` loops run as long as a condition is True
+* `while True` creates an infinite loop that usually relies on `break` to stop
 
 
 
