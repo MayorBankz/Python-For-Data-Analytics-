@@ -18,8 +18,7 @@
 11. Lambda + `map()`
 12. Lambda + `filter()`
 13. Summary Table
-14. Mini Practice Exercises
-15. Common Interview Questions
+
 
 ---
 
