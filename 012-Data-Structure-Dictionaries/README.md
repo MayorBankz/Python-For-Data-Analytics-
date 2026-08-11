@@ -52,7 +52,7 @@ employee = { "name": "Mayowa",
 print(employee["name"])
 ```
 
-# Output: Mayowa
+Output: Mayowa
 
 ---
 
