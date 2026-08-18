@@ -1,4 +1,4 @@
-## Topic - Pytho Functions
+## Topic - Python Functions
 ## Date - 17-08-2026
 
 ---
